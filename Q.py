@@ -1,11 +1,10 @@
 
 
 
-# 11. Find second largest element. Input: [10, 20, 4, 45]
-# 12. Check if two strings are anagrams. Input: 'listen', 'silent'
-# 13. Count frequency of elements in list. Input: [1,1,2,3]
-# 14. Find missing number from 1 to n. Input: [1,2,4,5], n=5
-# 15. Merge two lists. Input: [1,2] and [3,4]
+
+
+
+
 # 16. Sort dictionary by value. Input: {'a':3,'b':1}
 # 17. Find common elements in two lists. Input: [1,2,3] and [2,3,4]
 # 18. Check if a number is prime. Input: 11
