@@ -1,11 +1,25 @@
-
-
-
-
-
-
-
+# Top 30 Python Coding Interview Questions (With
+# Inputs)
+# 1. Reverse a string. Input: 'hello'
+# 2. Check if a string is palindrome. Input: 'madam'
+# 3. Find the largest element in a list. Input: [1, 5, 3, 9]
+# 4. Check if a number is even or odd. Input: 7
+# 5. Count vowels in a string. Input: 'hello world'
+# 6. Swap two variables. Input: a=5, b=10
+# 7. Find factorial of a number. Input: 5
+# 8. Print Fibonacci series up to n terms. Input: n=6
+# 9. Remove duplicates from list. Input: [1,2,2,3]
+# 10. Find length of string without using len(). Input: 'hello'
+# 11. Find second largest element. Input: [10, 20, 4, 45]
+# 12. Check if two strings are anagrams. Input: 'listen', 'silent'
+# 13. Count frequency of elements in list. Input: [1,1,2,3]
+# 14. Find missing number from 1 to n. Input: [1,2,4,5], n=5
+# 15. Merge two lists. Input: [1,2] and [3,4]
 # 16. Sort dictionary by value. Input: {'a':3,'b':1}
+
+
+
+
 # 17. Find common elements in two lists. Input: [1,2,3] and [2,3,4]
 # 18. Check if a number is prime. Input: 11
 # 19. Flatten a nested list. Input: [[1,2],[3,4]]
