@@ -33,7 +33,7 @@ def add_student():
 
         # Validate
         if len(chosen) != 4:
-            print("❌ Please enter exactly 4 valid subjects")
+            print("Please enter exactly 4 valid subjects")
             return
 
         marks_dict = {}
@@ -47,7 +47,7 @@ def add_student():
         row = [sid, name] + [marks_dict[sub] for sub in subjects]
         writer.writerow(row)
 
-        print("✅ Data stored\n")
+        print(" Data stored\n")
 
 
 # 🔹 Search
@@ -61,10 +61,10 @@ def search_student(search_id):
                     print_marksheet(row)
                     return
 
-        print("❌ No data found")
+        print(" No data found")
 
     except FileNotFoundError:
-        print("❌ File not found")
+        print(" File not found")
 
 
 # 🔹 Print Marksheet
@@ -96,7 +96,7 @@ def print_marksheet(row):
     print("------------------------------------------\n")
 
 
-# 🔥 Main
+
 add_student()
 sid = input("Enter ID to search: ")
 search_student(sid)
