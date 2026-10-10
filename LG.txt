@@ -1,0 +1,76 @@
+LG Soft
+1Q. Count Substrings with Equal Number of 0s, 1s, and 2s
+
+2Q. You are given N travel connections between cities. Each connection is represented by two city codes.Your task is to find the shortest possible route that starts from DEL and visits every city at least once.
+A city may be visited multiple times if necessary.
+If multiple shortest routes are possible, return the route that is lexicographically smallest (alphabetically smallest based on the sequence of city names).
+
+
+1Q.
+def countSubstrings(s):
+    count0 = count1 = count2 = 0
+    
+    # Initial difference (0, 0) occurs once
+    freq = {(0, 0): 1}
+    
+    answer = 0
+    
+    for ch in s:
+        if ch == '0':
+            count0 += 1
+        elif ch == '1':
+            count1 += 1
+        else:
+            count2 += 1
+        
+        # Create the difference pair
+        key = (count0 - count1, count0 - count2)
+        
+        # If seen before, all previous occurrences form valid substrings
+        answer += freq.get(key, 0)
+        
+        # Store current occurrence
+        freq[key] = freq.get(key, 0) + 1
+    
+    return answer
+
+
+
+
+2Q.
+from collections import defaultdict, deque
+
+n = int(input("Enter number of routes: "))
+
+graph = defaultdict(list)
+cities = set()
+
+for _ in range(n):
+    a, b = input().split()
+    graph[a].append(b)
+    cities.add(a)
+    cities.add(b)
+
+# Sort destinations alphabetically
+for city in graph:
+    graph[city].sort()
+
+start = "DEL"
+
+queue = deque([(start, [start])])
+visited = set()
+
+while queue:
+    city, path = queue.popleft()
+
+    # Check if all cities are visited
+    if len(set(path)) == len(cities):
+        print("Shortest route:")
+        print(" -> ".join(path))
+        break
+
+    # Explore alphabetically
+    for neighbour in graph[city]:
+        if neighbour not in path:
+            queue.append((neighbour, path + [neighbour]))
+

@@ -1,0 +1,23 @@
+Radware 27 2 2 0 0 
+
+Dictionary 
+Annagram -> list 
+Py , sql , ml , rag 
+2ai model development Q
+
+	1. Inheritance 
+	2. 2sum
+	3. Linked list (sorting 2 LL )
+
+Networking
+RAG
+Transport layer 
+Anagram 
+Dictionary 
+Time complexity 
+Collection datatype 
+Diff bw list tuple set
+Datatype 
+OS
+WSL
+Ml algo isolation forest from resume 
